@@ -1,6 +1,15 @@
 #!/usr/bin/python3
 def canUnlockAll(boxes):
-    n= len(boxes)
+    """
+    Determines if all boxes can be opened using BFS approach.
+    
+    Args:
+        boxes: List of lists where each sublist contains keys to other boxes.
+    
+    Returns:
+        bool: True if all boxes can be opened, False otherwise.
+    """
+    n = len(boxes)
     visited = set()
     queue = []
     queue.append(0)
